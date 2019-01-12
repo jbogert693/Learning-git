@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="search" type="application/opensearchdescription+xml" href="https://help.github.com/opensearch.xml" title="GitHub:Help">
+  <title>
+  
+    
+      Set up git - User Documentation
+    
+  
+  </title>
+  
+<link rel="icon" type="image/x-icon" href="https://help.github.com/assets/images/site/favicon.ico">
+<link rel="stylesheet" href="Set%20up%20git%20-%20User%20Documentation_files/application.css">
+<script type="text/javascript" async="" src="Set%20up%20git%20-%20User%20Documentation_files/ga.js"></script><script src="Set%20up%20git%20-%20User%20Documentation_files/application.js"></script>
+
+<meta name="Description" content=" At the heart of GitHub is an open source version control system (VCS) called Git. Git is responsible for everything GitHub-related that happens locally on your computer.  To use Git on the command lin…">
+
+<script type="text/javascript">
+  $(function() {
+    $('#quicksearch-query').lunrSearch({
+      
+      indexUrl: '/search/search.json',
+      
+      quickSearchResults:  '.autocomplete-results',
+      quickSearchEntries:  '.result-group',
+      quickSearchTemplate: '#quicksearch-results-template',
+
+      searchResults: '.search-container',
+      searchEntries: '.search-results',
+      searchTemplate: '#search-results-template'
+    });
+  });
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3769691-27']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body id="com" class="platform-switch platform-linux">
+
+<div id="not-footer">
+  
+
+
+  <div id="header">
+    <div class="clearfix">
+      <h1 class="site-logo"><a href="https://help.github.com/">GitHub Help</a></h1>
+
+      <ul class="top-nav">
+        
+<li>
+  <button class="js-dropdown-button dropdown-button">Version <div class="dropdown-caret"></div></button>
+  <div class="dropdown-menu js-dropdown-menu">
+    <a href="https://help.github.com/">GitHub.com</a>
+    
+    <a href="https://help.github.com/enterprise/2.15/">GitHub Enterprise Server 2.15</a>
+    
+    <a href="https://help.github.com/enterprise/2.14/">GitHub Enterprise Server 2.14</a>
+    
+    <a href="https://help.github.com/enterprise/2.13/">GitHub Enterprise Server 2.13</a>
+    
+  </div>
+</li>
+
+
+        
+          <li><a href="https://github.com/contact" onclick="_gaq.push(['_trackEvent', 'Contact Support', 'Set up git', window.location.href]);">Contact Support</a></li>
+<li><a href="https://github.com/">Return to GitHub</a></li>
+
+        
+      </ul>
+    </div>
+  </div>
+
+  <div id="content-wrapper">
+
+    <div class="site">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="content-header small">
+        <h6 class="breadcrumbs">
+          
+          <a href="https://help.github.com/categories/bootcamp">Bootcamp</a>
+          /
+          
+          Set up git
+        </h6>
+        <div class="search-form small right">
+          
+  
+
+
+<script id="quicksearch-results-template" type="text/mustache">
+  <div class="header">
+    <a class="initial quicksearch-seemore" href="/search?q=">See more results</a>
+  </div>
+  [[#entries]]
+    <tr class="article">
+      <td class="info">
+        <a href="[[url]]" class="js-articles-quicksearch-link">[[title]]</a>
+      </td>
+    </tr>
+  [[/entries]]
+</script>
+
+<form accept-charset="UTF-8" action="/search" id="articles-search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+  <div class="outer">
+    <div class="inner fade-label">
+      <input type="text" name="q" id="quicksearch-query" class="js-articles-quicksearch" placeholder="How can we help?">
+      <div class="search-form-btn">
+        <button><span class="octicon octicon-search"></span></button>
+      </div>
+    </div>
+  </div>
+</form>
+<div class="autocomplete-results" style="display: none;">
+  <table class="result-group" cellspacing="0" cellpadding="0" border="0">
+  </table>
+</div>
+
+        </div>
+      </div>
+
+      <div class="article js-hide-during-search">
+
+        <h2>Set up git</h2>
+
+        <div class="article-body content-body wikistyle markdown-format">
+          
+
+          <div id="article-platform-nav">
+  <ul>
+    <li class="platform-mac">
+      <a href="#platform-mac" data-platform="mac">
+        mac
+      </a>
+    </li>
+    <li class="platform-windows">
+      <a href="#platform-windows" data-platform="windows">
+        windows
+      </a>
+    </li>
+    <li class="platform-linux">
+      <a href="#platform-linux" data-platform="linux">
+        linux
+      </a>
+    </li>
+    <li class="platform-all">
+      <a href="#platform-all" data-platform="all">
+        all
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+          <div class="intro">
+
+          
+
+          </div>
+
+          <div class="intro">
+
+<p>At the heart of GitHub is an open source version control system (VCS) called <em><a href="https://git-scm.com/">Git</a></em>. Git is responsible for everything GitHub-related that happens locally on your computer.</p>
+
+</div>
+
+<p>To use Git on the command line, you'll need to download, install, and configure Git on your computer.</p>
+
+<p>If you want to work with Git locally, but don't want to use the command line, you can instead download and install the <a href="https://desktop.github.com/">GitHub Desktop</a> client. For more information, see "<a href="https://help.github.com/desktop/guides/getting-started-with-github-desktop/">Getting Started with GitHub Desktop</a>."</p>
+
+<p>If you don't need to work with files locally, GitHub lets you 
+complete many Git-related actions directly in the browser, including:</p>
+
+<ul>
+<li><a href="https://help.github.com/articles/create-a-repo">Creating a repository</a></li>
+<li><a href="https://help.github.com/articles/fork-a-repo">Forking a repository</a></li>
+<li><a href="https://help.github.com/articles/managing-files-on-github/">Managing files</a></li>
+<li><a href="https://help.github.com/articles/be-social">Being social</a></li>
+</ul>
+
+<h3>
+<a id="setting-up-git" class="anchor" href="#setting-up-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setting up Git</h3>
+
+<ol>
+<li>
+<a href="https://git-scm.com/downloads">Download and install the latest version of Git</a>.</li>
+<li>
+<a href="https://help.github.com/articles/setting-your-username-in-git">Set your username in Git</a>.</li>
+<li>
+<a href="https://help.github.com/articles/setting-your-commit-email-address-in-git">Set your commit email address in Git</a>.</li>
+</ol>
+
+<h3>
+<a id="next-steps-authenticating-with-github-from-git" class="anchor" href="#next-steps-authenticating-with-github-from-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Next steps: Authenticating with GitHub from Git</h3>
+
+<p>When you connect to a GitHub repository from Git, you'll need to authenticate with GitHub using either HTTPS or SSH.</p>
+
+<h4>
+<a id="connecting-over-https-recommended" class="anchor" href="#connecting-over-https-recommended" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Connecting over HTTPS (recommended)</h4>
+
+<p>If you <a href="https://help.github.com/articles/which-remote-url-should-i-use/#cloning-with-https-urls-recommended">clone with HTTPS</a>, you can <a href="https://help.github.com/articles/caching-your-github-password-in-git">cache your GitHub password in Git</a> using a credential helper.</p>
+
+<h4>
+<a id="connecting-over-ssh" class="anchor" href="#connecting-over-ssh" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Connecting over SSH</h4>
+
+<p>If you <a href="https://help.github.com/articles/which-remote-url-should-i-use#cloning-with-ssh-urls">clone with SSH</a>, you must <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">generate SSH keys</a> on each computer you use to push or pull from GitHub.</p>
+
+<h3>
+<a id="celebrate" class="anchor" href="#celebrate" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Celebrate</h3>
+
+<p>Congratulations, you now have Git and GitHub all set up! What do you want to do next?</p>
+
+<ul>
+<li><strong>Set up Git</strong></li>
+<li>"<a href="https://help.github.com/articles/create-a-repo">Create a repository</a>"</li>
+<li>"<a href="https://help.github.com/articles/fork-a-repo">Fork a repository</a>"</li>
+<li>"<a href="https://help.github.com/articles/be-social">Be social</a>"</li>
+<li>Connect with people around the world in the <a href="https://github.community/">GitHub Community Forum</a>
+</li>
+</ul>
+        </div>
+
+        <div class="support-footer">
+  <ul class="article-footer button-nav">
+    
+      <li><a href="https://github.com/contact" class="minibutton" onclick="_gaq.push(['_trackEvent', 'Contact Support', 'Set up git', window.location.href]);">
+          <span class="octicon octicon-comment-discussion"></span>
+          Contact a human
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+
+      <div class="sidebar">
+  <h3>Article versions</h3>
+  <ul>
+    <li><a href="#" skip-conversion="" data-proofer-ignore="">GitHub.com</a></li>
+
+    
+      <li class="">
+        <a data-proofer-ignore="" href="https://help.github.com/enterprise/2.15/user/articles/set-up-git/">GitHub Enterprise Server 2.15</a>
+      </li>
+    
+      <li class="">
+        <a data-proofer-ignore="" href="https://help.github.com/enterprise/2.14/user/articles/set-up-git/">GitHub Enterprise Server 2.14</a>
+      </li>
+    
+      <li class="">
+        <a data-proofer-ignore="" href="https://help.github.com/enterprise/2.13/user/articles/set-up-git/">GitHub Enterprise Server 2.13</a>
+      </li>
+    
+
+  </ul>
+</div>
+
+
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="inner">
+    <a href="https://github.com/" class="invertocat">
+      <img alt="The GitHub Logo" src="Set%20up%20git%20-%20User%20Documentation_files/invertocat.png" width="24" height="24">
+    </a>
+    <p class="left">
+      © <span id="year">2019</span> GitHub Inc. All rights reserved.
+    </p>
+      <ul class="links right">
+        <li><a href="https://help.github.com/terms-of-service">Terms of Service</a></li>
+        <li><a href="https://help.github.com/privacy-policy">Privacy</a></li>
+        
+          <li><a href="https://help.github.com/security">Security</a></li>
+        
+        
+          <li><a href="https://github.com/contact" onclick="_gaq.push(['_trackEvent', 'Contact Support', 'Set up git', window.location.href]);">
+              Support
+            </a>
+          </li>
+        
+      </ul>
+  </div>
+</div>
+
+
+<div class="fullscreen-overlay"></div>
+
+
+</body></html>
