@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" class="no-js" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://readwrite.com/xmlrpc.php">
+<!--[if lt IE 9]>
+	<script src="https://readwrite.com/wp-content/themes/rw/js/html5.js"></script>
+	<![endif]-->
+<title>GitHub For Beginners: Don't Get Scared, Get Started - ReadWrite</title>
+
+<link rel="canonical" href="https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/">
+<link rel="publisher" href="https://plus.google.com/+ReadWriteWeb">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GitHub For Beginners: Don't Get Scared, Get Started - ReadWrite">
+<meta property="og:description" content="GitHub is more than just a programmer's tool. If you want to collaborate on anything, you should give it a try. Part 1 of a two-part look at getting started with GitHub.">
+<meta property="og:url" content="https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/">
+<meta property="og:site_name" content="ReadWrite">
+<meta property="article:publisher" content="https://www.facebook.com/ReadWrite">
+<meta property="article:tag" content="GitHub">
+<meta property="article:tag" content="How To">
+<meta property="article:tag" content="version control">
+<meta property="article:section" content="Code">
+<meta property="article:published_time" content="2013-09-30T13:02:00+00:00">
+<meta property="article:modified_time" content="2018-07-26T17:21:48+00:00">
+<meta property="og:updated_time" content="2018-07-26T17:21:48+00:00">
+<meta property="og:image" content="https://images.readwrite.com/wp-content/uploads/2018/07/developer.jpg">
+<meta property="og:image:secure_url" content="https://images.readwrite.com/wp-content/uploads/2018/07/developer.jpg">
+<meta property="og:image:width" content="1125">
+<meta property="og:image:height" content="750">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="GitHub is more than just a programmer's tool. If you want to collaborate on anything, you should give it a try. Part 1 of a two-part look at getting started with GitHub.">
+<meta name="twitter:title" content="GitHub For Beginners: Don't Get Scared, Get Started - ReadWrite">
+<meta name="twitter:site" content="@RWW">
+<meta name="twitter:image" content="https://images.readwrite.com/wp-content/uploads/2018/07/developer.jpg">
+<meta name="twitter:creator" content="@RWW">
+<script type="text/javascript" async="" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/recaptcha__en.js"></script><script async="" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/a.js" data-sumo-site-id="a51dd0819147e3d3dc2e1729743f88213ae2b2990c36c1a5d4bea16c91682288" data-sumo-platform="wordpress"></script><script async="" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/analytics.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","url":"https://readwrite.com/","sameAs":["https://www.facebook.com/ReadWrite","https://www.linkedin.com/company/readwrite","https://plus.google.com/+ReadWriteWeb","https://www.youtube.com/user/readwriteTV","https://twitter.com/RWW"],"@id":"https://readwrite.com/#organization","name":"ReadWrite","logo":"https://readwrite.com/wp-content/uploads/2016/03/logo.png"}</script>
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="ReadWrite » Feed" href="https://readwrite.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="ReadWrite » Comments Feed" href="https://readwrite.com/comments/feed/">
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/readwrite.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.9"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/wp-emoji-release.js" type="text/javascript" defer="defer"></script>
+<script>
+					advanced_ads_ready=function(){var fns=[],listener,doc=typeof document==="object"&&document,hack=doc&&doc.documentElement.doScroll,domContentLoaded="DOMContentLoaded",loaded=doc&&(hack?/^loaded|^c/:/^loaded|^i|^c/).test(doc.readyState);if(!loaded&&doc){listener=function(){doc.removeEventListener(domContentLoaded,listener);window.removeEventListener("load",listener);loaded=1;while(listener=fns.shift())listener()};doc.addEventListener(domContentLoaded,listener);window.addEventListener("load",listener)}return function(fn){loaded?setTimeout(fn,0):fns.push(fn)}}();
+			</script><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="unslider-css-css" href="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/348.css" type="text/css" media="all">
+<link rel="stylesheet" id="slider-css-css" href="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/914.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="wptheme-style-css" href="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="wppb_stylesheet-css" href="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/style-front-end.css" type="text/css" media="all">
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/jquery_002.js"></script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/jquery-migrate_002.js"></script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/823.js"></script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/428.js"></script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/227.js"></script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/advanced.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var advanced_ads_responsive = {"reload_on_resize":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/165_002.js"></script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/800.js"></script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/jquery.js"></script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/jquery-migrate.js"></script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/social-scroll.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var advanced_ads_pro_ajax_object = {"ajax_url":"https:\/\/readwrite.com\/wp-admin\/admin-ajax.php","lazy_load_module_enabled":"1","lazy_load":{"default_offset":0,"offsets":[]}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/648.js"></script>
+<link rel="https://api.w.org/" href="https://readwrite.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://readwrite.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://readwrite.com/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 4.9.9">
+<link rel="shortlink" href="https://readwrite.com/?p=88905">
+<link rel="alternate" type="application/json+oembed" href="https://readwrite.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Freadwrite.com%2F2013%2F09%2F30%2Funderstanding-github-a-journey-for-beginners-part-1%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://readwrite.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Freadwrite.com%2F2013%2F09%2F30%2Funderstanding-github-a-journey-for-beginners-part-1%2F&amp;format=xml">
+<script>advads_items = { conditions: {}, display_callbacks: {}, display_effect_callbacks: {}, hide_callbacks: {}, backgrounds: {}, effect_durations: {}, close_functions: {}, showed: [] };</script><style type="text/css" id="advads-layer-custom-css"></style><script type="text/javascript">
+		;var advadsCfpQueue = [], advadsCfpExpHours = 3;
+		var advadsCfpClickLimit = 3;
+		;
+		var advadsCfpPath = '';
+		var advadsCfpDomain = '';
+		var advadsCfpAd = function( adID ){
+			if ( 'undefined' == typeof advadsProCfp ) { advadsCfpQueue.push( adID ) } else { advadsProCfp.addElement( adID ) }
+		};
+		</script><link rel="amphtml" href="https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/amp/"><link rel="icon" href="https://images.readwrite.com/wp-content/uploads/2018/03/cropped-rw-32x32.jpg" sizes="32x32">
+<link rel="icon" href="https://images.readwrite.com/wp-content/uploads/2018/03/cropped-rw-192x192.jpg" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://images.readwrite.com/wp-content/uploads/2018/03/cropped-rw-180x180.jpg">
+<meta name="msapplication-TileImage" content="https://images.readwrite.com/wp-content/uploads/2018/03/cropped-rw-270x270.jpg">
+<style type="text/css" id="wp-custom-css">
+			.single .entry-content li {display:list-item;}
+
+.annual-salary{padding:1em 0 0;margin:1em 0 0;float:left; width:100%;}
+.annual-salary h5{text-align:center;display: block;margin-bottom:2em;}
+.annual-salary h2{color:#ca3838;font-size: 4.5em;font-weight: 700;}
+.annual-salary p{margin-bottom: 1em;color:#545353;font-size: 1.1em;}
+
+.site-reach{padding:1em 0 0;margin:1em 0 0;float:left; width:100%;}
+.site-reach .inner{padding:1em;position: absolute;top:0;left:1em;}
+.site-reach h5{font-size: 2em;font-weight: 600;color:#fff;}
+.site-reach p{text-transform: uppercase;font-weight: 600;color:#fff;line-height: 1.25em;}
+.site-reach .row{margin-bottom: 1em;}
+.site-reach .row:last-child{margin-bottom:0;}
+.site-reach .total-reach h5{text-transform: uppercase;color:#222529;}
+.site-reach .total-reach p{color:#222529;font-weight: 1.25em;}
+.site-reach img{max-width: 100%;height:auto !important}
+.site-reach h2{color:#ca3838;font-weight: 700;font-size: 5em;}
+.media-platform {padding:1em 0 0;margin:1em 0 0em;float:left; width:100%;}
+.media-platform .col-md-5 h5{color:#ca3838;font-weight: 600;font-size: 2em;margin-bottom: 0;}
+.media-platform .col-md-5 p{color:#545353;font-size: 1.1em;font-weight: 600;margin-bottom: 1em !important}
+.page article .entry-content img{height:auto;}
+.advertise-form{margin-top:2em}
+.advertise-form .col-md-6{margin:0px;}
+.advertise-form .col-md-6 input{padding:0.25em;margin:0.5em 0;border:1px solid #f1f1f1;color:#545353;max-width: 100%;}
+.advertise-form .col-md-6 select{padding:0.25em;margin:0.5em 0;display: block;border:1px solid #f1f1f1;width:100%;color:#545353}
+.advertise-form textarea{width:100%;padding:0.25em;margin:0.5em 0;border:1px solid #f1f1f1;color:#545353}
+.advertise-form input[type="submit"]{margin: 1em auto;display: block;border: 0;background: #ca3838;padding: 0.5em 2em;color: #fff;cursor:pointer;}
+.content-seperator{margin: 1em 0;padding: 1em 0;border-bottom: 1px solid #f2f2f2;float: left;width: 100%;}
+.popular-tags .post_tags li{display:inline;font-size: 0.9em;
+line-height: 2.25em;}
+.error404 .search-form{text-align:center;}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+	.media-platform .col-md-5{margin-top:1.5em;}
+.trending-post-desc .entry-title a{font-size: 0.9em !important}
+.trending-post-desc .entry-content{display: none;}
+.most-rending img{min-height: 283px !important}
+.entry-meta .author a{line-height: 1.5em;}
+#menu-social-media li{display:inline-block;}
+.trending-posts-row .trending-post-desc{padding-left: 1em !important;max-width: 70% !important;flex:0 0 70.707070%}
+.home-posts-wrap .posts-inner .entry-content{display: none}
+.cat-most-popular .most-popular-post-desc .entry-content{display: none}
+.cat-loop .posts-inner .most-popular-posts-desc .entry-content{display: none}
+.tag .posts-inner .entry-content{display: none}
+.author .posts-inner .entry-content{display: none}
+}
+.sidenav ul{margin:0 0 0.75em}
+.sidenav li{line-height:1.25em;}
+.sidenav li a{font-size:1em;}
+#mySidenav h4{font-size:1em}
+#mySidenav .site-branding img{margin-bottom:1.5em;}
+.single .entry-content ol{}
+.single .entry-content ol h2{font-size:1em;}
+.single .about-author .author-description .author-title a{color:#393a3b}		</style>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="156085c5-0017-4150-b225-a731ad248f38/service" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/service.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="services/services" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/services.js"></script><style>@-webkit-keyframes insQ_100 {  from {  outline: 1px solid transparent  } to {  outline: 0px solid transparent }  }
+#menufication-top { animation-duration: 0.001s; animation-name: insQ_100; -webkit-animation-duration: 0.001s; -webkit-animation-name: insQ_100;  } </style><link type="text/css" rel="stylesheet" href="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/listbuilder-popup.css"></head>
+<body class="post-template-default single single-post postid-88905 single-format-standard wp-custom-logo">
+<div id="mySidenav" class="sidenav col-md-2">
+<div id="mySidenav-inner">
+<div class="site-branding">
+<a href="https://readwrite.com/" class="custom-logo-link" rel="home" itemprop="url"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/logo.png" class="custom-logo" alt="ReadWrite" itemprop="logo" width="148" height="26"></a> </div>
+<a href="javascript:void(0)" class="closebtn">×</a>
+<div class="clearfix"></div>
+<div class="row">
+<div class="col-md-12">
+<h4>Grow</h4>
+<ul>
+<li><a href="https://readwrite.com/category/sales/">Sales</a></li>
+<li><a href="https://readwrite.com/category/marketing/">Marketing</a></li>
+<li><a href="https://readwrite.com/category/customer-service/">Customer Service</a></li>
+<li><a href="https://readwrite.com/category/iot/">IoT</a></li>
+<li><a href="https://readwrite.com/category/arvr/">AR/VR</a></li>
+<li><a href="https://readwrite.com/category/code/">Code</a></li>
+<li><a href="https://readwrite.com/category/data-and-security/">Data and Security</a></li>
+<li><a href="https://readwrite.com/category/energy/">Energy</a></li>
+<li><a href="https://readwrite.com/category/hack/">Hack</a></li>
+<li><a href="https://readwrite.com/category/web/">Web</a></li>
+<ul>
+</ul></ul></div>
+<div class="col-md-12">
+<h4>Lead</h4>
+<ul>
+<li><a href="https://readwrite.com/category/productivity/">Productivity</a></li>
+<li><a href="https://readwrite.com/category/culture/">Culture</a></li>
+<li><a href="https://readwrite.com/category/branding/">Branding</a></li>
+<li><a href="https://readwrite.com/category/tech/">Tech</a></li>
+<li><a href="https://readwrite.com/category/cloud/">Cloud</a></li>
+<li><a href="https://readwrite.com/category/connect/">Connect</a></li>
+<li><a href="https://readwrite.com/category/deals/">Deals</a></li>
+<li><a href="https://readwrite.com/category/fund/">Fund</a></li>
+<li><a href="https://readwrite.com/category/health/">Health</a></li>
+<li><a href="https://readwrite.com/category/startups/">Startups</a></li>
+<ul>
+</ul></ul></div>
+<div class="col-md-12">
+<h4>Site Links</h4>
+<ul>
+<li><a href="https://readwrite.com/about/">About</a></li>
+<li><a href="https://readwrite.com/advertise/">Advertise</a></li>
+<li><a href="https://readwrite.com/events/">Events</a></li>
+<li><a href="https://readwrite.com/contributor-guidelines/">Guest Post</a></li>
+<li><a href="https://readwrite.com/contact/">Contact</a></li>
+<li><a href="https://readwrite.com/privacy/">Privacy</a></li>
+<ul>
+</ul></ul></div>
+</div>
+</div>
+</div>
+<div id="page" class="hfeed container-fluid">
+<div class="row">
+<div id="sidebar" class="sidebar col-md-2" style="top: 0px;">
+<div id="leftsidebar" class="col-md-2">
+<header id="masthead" class="site-header" role="banner">
+<div class="site-branding">
+<a href="https://readwrite.com/" class="custom-logo-link" rel="home" itemprop="url"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/logo.png" class="custom-logo" alt="ReadWrite" itemprop="logo" width="148" height="26"></a> </div>
+
+<div class="navbar-header">
+<div class="mobile-search">
+<span class="search-icon">&nbsp;</span>
+<div id="widget-area" class="widget-area" role="complementary">
+<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://readwrite.com/">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search …" name="s">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form></aside> <a href="javascript:void(0)" class="closesearch" onclick="closeNav()">×</a>
+</div>
+</div>
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<span class="icon-bar"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/mobile-menu.png" alt="Mobile menu"></span>
+</button>
+</div>
+</header>
+<div id="secondary" class="secondary">
+<nav id="site-navigation" class="main-navigation navigation" role="navigation">
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+<div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-125069" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-125069"><a href="https://readwrite.com/category/ai/">AI</a></li>
+<li id="menu-item-125070" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-125070"><a href="https://readwrite.com/category/blockchain/">Blockchain</a></li>
+<li id="menu-item-134432" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134432"><a href="https://readwrite.com/category/connected-devices/">Connected Devices</a></li>
+<li id="menu-item-125071" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-125071"><a href="https://readwrite.com/category/fintech/">Fintech</a></li>
+<li id="menu-item-134448" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134448"><a href="https://readwrite.com/category/industrial/">Industrial</a></li>
+<li id="menu-item-143441" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-143441"><a href="https://readwrite.com/category/startups/">Startups</a></li>
+<li id="menu-item-134447" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134447"><a href="https://readwrite.com/category/smart-cities/">Smart Cities</a></li>
+<li id="menu-item-134446" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-134446"><a href="https://readwrite.com/category/transport/">Transport</a></li>
+<li id="menu-item-125076" class="menu-popup menu-item menu-item-type-custom menu-item-object-custom menu-item-125076"><a href="#">More</a></li>
+</ul></div> </div>
+</nav>
+<div id="widget-area" class="widget-area" role="complementary">
+<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://readwrite.com/">
+<label>
+<span class="screen-reader-text">Search for:</span>
+<input type="search" class="search-field" placeholder="Search …" name="s">
+</label>
+<input type="submit" class="search-submit" value="Search">
+</form></aside> </div>
+<nav id="social-navigation" class="social-navigation" role="navigation">
+<div class="menu-social-media-container"><ul id="menu-social-media" class="menu"><li id="menu-item-125046" class="fb menu-item menu-item-type-custom menu-item-object-custom menu-item-125046"><a target="_blank" href="https://www.facebook.com/ReadWrite"><span class="screen-reader-text">Facebook</span></a></li>
+<li id="menu-item-125047" class="twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-125047"><a target="_blank" href="https://twitter.com/RWW"><span class="screen-reader-text">Twitter</span></a></li>
+<li id="menu-item-125048" class="insta menu-item menu-item-type-custom menu-item-object-custom menu-item-125048"><a target="_blank" href="https://www.instagram.com/readwritedotcom/"><span class="screen-reader-text">Instagram</span></a></li>
+<li id="menu-item-125050" class="gplus menu-item menu-item-type-custom menu-item-object-custom menu-item-125050"><a target="_blank" href="https://plus.google.com/+ReadWriteWeb/posts"><span class="screen-reader-text">Gplus</span></a></li>
+<li id="menu-item-125051" class="ytube menu-item menu-item-type-custom menu-item-object-custom menu-item-125051"><a target="_blank" href="https://www.youtube.com/channel/UClMPvTStrcn829w34OWNEPw"><span class="screen-reader-text">Youtube</span></a></li>
+</ul></div> </nav>
+</div>
+</div>
+</div>
+<div id="content" class="site-content col-md-10">
+<div class="header-ad-wrap">
+<div id="rwads-d021a36614bb71ac3029a5962c22927c"><div class="rwads-home_header_728" id="rwads-507893684"><a data-bid="1" href="https://readwrite.com/adunit/147572" rel="nofollow"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/IoT_VBC_728x90.gif" alt="" style=" max-width: 100%; height: auto;" width="728" height="90"></a></div></div>
+</div>
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-88905" class="post-88905 post type-post status-publish format-standard has-post-thumbnail hentry category-code tag-github tag-how-to tag-version-control">
+<div class="row posts-inner">
+<div class="clearfix"></div>
+<div class="single-featured-img col-md-12">
+<div class="single-post-desc col-md-12">
+<header class="entry-header">
+<h1 class="entry-title">GitHub For Beginners: Don’t Get Scared, Get Started</h1> </header>
+<div class="clearfix"></div>
+<div class="entry-meta col-md-12">
+<span class="author">
+<a href="https://readwrite.com/author/lauren-orsini/">lauren orsini</a>
+</span>
+<span class="seperator">/</span>
+<span class="post-cat">30 Sep 2013</span>
+<span class="seperator">/</span>
+<span class="author catname"><a href="https://readwrite.com/category/code/" rel="category tag">Code</a></span>
+</div>
+</div>
+<div class="post-thumb col-md-11 offset-1">
+<img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/developer-825x500.jpg" class="attachment-single-featured size-single-featured wp-post-image" alt="" width="825" height="500"> </div>
+</div>
+<div class="clearfix"></div>
+<div class="row">
+<div class="col-md-1 post-author-profile">
+<div class="menu-social-media-container" id="single">
+<div id="scroller-anchor"></div>
+<ul id="menu-social-media" class="menu" style="position: relative; max-width: unset;">
+<li> <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Freadwrite.com%2F2013%2F09%2F30%2Funderstanding-github-a-journey-for-beginners-part-1%2F" target="_blank" title="Facebook"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/fb-icon-light.png"></a></li>
+<li><a href="https://twitter.com/intent/tweet?text=GitHub%20For%20Beginners:%20Don%E2%80%99t%20Get%20Scared,%20Get%20Started&amp;url=https%3A%2F%2Freadwrite.com%2F2013%2F09%2F30%2Funderstanding-github-a-journey-for-beginners-part-1%2F&amp;via=RWW" title="Twitter" target="_blank"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/twitter-icon-light.png"></a></li>
+<li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Freadwrite.com%2F2013%2F09%2F30%2Funderstanding-github-a-journey-for-beginners-part-1%2F" title="Linkedin" target="_blank"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/linkedin.png"></a></li>
+<li><a href="mailto:?Subject=Post From Read Write&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20https%3A%2F%2Freadwrite.com%2F2013%2F09%2F30%2Funderstanding-github-a-journey-for-beginners-part-1%2F&amp;text=GitHub%20For%20Beginners:%20Don%E2%80%99t%20Get%20Scared,%20Get%20Started" title="Email" target="_blank"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/email-share-icon.png"></a></li>
+</ul>
+</div>
+</div>
+<div class="entry-content col-md-10">
+<p>It’s 2013, and there’s no way around it: you need to learn how to use GitHub.</p>
+<p>Why? Because it’s a social network that has completely changed the 
+way we work. Having started as a developer’s collaborative platform, 
+GitHub is now the largest online storage space of collaborative works 
+that exists in the world. Whether you’re interested in participating in 
+this global mind meld or in researching this massive file dump of human 
+knowledge, you need to be here.</p>
+<blockquote><p><strong>See also: <a href="https://readwrite.com/2013/10/02/github-for-beginners-part-2">GitHub For Beginners: Commit, Push And Go</a></strong></p></blockquote>
+<p>Simply by being a member, you can brush elbows with the likes of&nbsp;Google, Facebook and <a href="https://www.calendar.com/">Calendar</a>.&nbsp;Before
+ GitHub existed, major companies created their knowledge mainly in 
+private. But when you access their GitHub accounts,&nbsp;you’re free to 
+download, study, and build upon anything they add to the network. So 
+what are you waiting for?</p>
+<h2>Looking For GitHub Answers</h2>
+<p>As embarrassing as it is to admit, this tutorial came into being 
+because all of the “GitHub for Beginners” articles I read were way over 
+my head. That’s probably because I don’t have a strong programming 
+background, like most GitHub users. I couldn’t identify with the way 
+most tutorials suggest using GitHub, as a showcase for my programming 
+work.</p>
+<blockquote><p><strong>See also: <a href="https://readwrite.com/2013/11/18/github-tom-preston-warner">Github’s Tom Preston-Werner: How We Went Mainstream</a></strong></p></blockquote>
+<p>What you might not know is that there are plenty of reasons to use 
+GitHub if you’re not a programmer. According to GitHub’s educational 
+videos, any knowledge worker can benefit, with “knowledge worker” 
+defined as most any profession that makes use of a computer.</p>
+<p>If you’ve given up on understanding how to use GitHub, this article is for you.</p>
+<p>One of the main misconceptions about GitHub is that it’s a 
+development tool, as much a part of coding as computer languages and 
+compilers. However, GitHub itself isn’t much more than a social network 
+like Facebook or Flickr. You build a profile, upload projects to share 
+and connect with other users by “following” their accounts. And while 
+many users store programs and code projects, there’s nothing preventing 
+you from keeping text documents or other file types in your project 
+folders to show off.</p>
+<p>&nbsp;</p>
+<figure><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/MTIyMzA0MjExMDgwNzQxNDc4.png"><figcaption>The author’s GitHub page.</figcaption></figure>
+<p>You may already have a dozen other social media accounts, but here’s why you should be on GitHub anyway: it’s got the best <a href="https://help.github.com/articles/github-terms-of-service">Terms of Service</a>
+ agreement out of the bunch. If you check out Section F of the terms, 
+you’ll see that GitHub does everything in its power to ensure that you 
+retain total ownership of any projects you upload to the site:</p>
+<p>“We claim no intellectual property rights over the material you 
+provide to the Service. Your profile and materials uploaded remain 
+yours.”</p>
+<p>What’s more, you can actually use GitHub without knowing ANY code at 
+all. You don’t really need a tutorial to sign up and click around. But I
+ do think that there’s merit to learning things the hard way first, by 
+which I mean, with plain old coding in Git. After all, GitHub just 
+happens to be one of the most effortless graphical interfaces for the 
+Git programming language.</p>
+<h2>What Is Git?</h2>
+<p>Thank famed software developer <a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a>
+ for Git, the software that runs at the heart of GitHub. (And while 
+you’re at it, go ahead thank him for the Linux operating system, too.) 
+Git is version control software, which means it manages changes to a 
+project without overwriting any part of that project. And it’s not going
+ away anytime soon, particularly since Torvalds and his fellow kernel 
+developers employ Git to help develop the core kernel for Linux.</p>
+<p>Why use something like Git? Say you and a coworker are both updating 
+pages on the same website. You make your changes, save them, and upload 
+them back to the website. So far, so good. The problem comes when your 
+coworker is working on the same page as you at the same time. One of you
+ is about to have your work overwritten and erased.</p>
+<p>A <a href="https://git-scm.com/video/what-is-version-control">version control</a>
+ application like Git keeps that from happening. You and your coworker 
+can each upload your revisions to the same page, and Git will save two 
+copies. Later, you can merge your changes together without losing any 
+work along the way. You can even revert to an earlier version at any 
+time, because Git keeps a “snapshot” of every change ever made.</p>
+<p>The problem with Git is that it’s so ancient that we have to use the 
+command line—or Terminal if you’re a Mac user—in order to access it, 
+typing in snippets of code like ‘90s hackers. This can be a difficult 
+proposition for modern computer users. That’s where GitHub comes in.</p>
+<p>&nbsp;</p>
+<figure><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/MTIyMzA0MjEzMjI4NTQ3MzUz.png"><figcaption>The author’s Terminal screen on a Mac.</figcaption></figure>
+<p>GitHub makes Git easier to use in two ways. First, if you <a href="https://github.com/">download the GitHub software</a>
+ to your computer, it provides a visual interface to help you manage 
+your version-controlled projects locally. Second, creating an account on
+ GitHub.com brings your version-controlled projects to the Web, and ties
+ in social network features for good measure.</p>
+<p>You can browse other GitHub users’ projects, and even download copies
+ for yourself to alter and learn from. Other users can do the same with 
+your public projects, and even spot errors and suggest fixes. Either 
+way, no data is lost because Git saves a “snapshot” of every change.</p>
+<p>While it’s possible to use GitHub without learning Git, there’s a big
+ difference between using and understanding. Before I figured out Git I 
+could use GitHub, but I didn’t really understand why. In this tutorial, 
+we’re going to learn to use Git on the command line.</p>
+<h2>Words People Use When They Talk About Git</h2>
+<p>In this tutorial, there are a few words I’m going to use repeatedly, 
+none of which I’d heard before I started learning. Here’s the big ones:</p>
+<p><strong>Command Line:</strong> The computer program we use to input 
+Git commands. On a Mac, it’s called Terminal. On a PC, it’s a non-native
+ program that you download when you download Git for the first time 
+(we’ll do that in the next section). In both cases, you type text-based 
+commands, known as prompts, into the screen, instead of using a mouse.</p>
+<p><strong>Repository:</strong> A directory or storage space where your 
+projects can live. Sometimes GitHub users shorten this to “repo.” It can
+ be local to a folder on your computer, or it can be a storage space on 
+GitHub or another online host. You can keep code files, text files, 
+image files, you name it, inside a repository.</p>
+<p><strong>Version Control:</strong> Basically, the purpose Git was 
+designed to serve. When you have a Microsoft Word file, you either 
+overwrite every saved file with a new save, or you save multiple 
+versions. With Git, you don’t have to. It keeps “snapshots” of every 
+point in time in the project’s history, so you can never lose or 
+overwrite it.</p>
+<p><strong>Commit:</strong> This is the command that gives Git its 
+power. When you commit, you are taking a “snapshot” of your repository 
+at that point in time, giving you a checkpoint to which you can 
+reevaluate or restore your project to any previous state.</p>
+<p><strong>Branch:</strong> How do multiple people work on a project at 
+the same time without Git getting them confused? Usually, they “branch 
+off” of the main project with their own versions full of changes they 
+themselves have made. After they’re done, it’s time to “merge” that 
+branch back with the “master,” the main directory of the project.</p>
+<h2>Git-Specific Commands</h2>
+<p>Since Git was designed with a big project like Linux in mind, there 
+are a lot of Git commands. However, to use the basics of Git, you’ll 
+only need to know a few terms. They all begin the same way, with the 
+word “git.”</p>
+<p><strong><code>git init</code>:</strong> Initializes a new Git 
+repository. Until you run this command inside a repository or directory,
+ it’s just a regular folder. Only after you input this does it accept 
+further Git commands.</p>
+<p><strong><code>git config</code>:</strong> Short for “configure,” this is most useful when you’re setting up Git for the first time.</p>
+<p><strong><code>git help</code>:</strong> Forgot a command? Type this 
+into the command line to bring up the 21 most common git commands. You 
+can also be more specific and type “git help init” or another term to 
+figure out how to use and configure a specific git command.</p>
+<p><strong><code>git status</code>:</strong> Check the status of your 
+repository. See which files are inside it, which changes still need to 
+be committed, and which branch of the repository you’re currently 
+working on.</p>
+<p><strong><code>git add</code>:</strong> This does <em>not</em> add new
+ files to your repository. Instead, it brings new files to Git’s 
+attention. After you add files, they’re included in Git’s “snapshots” of
+ the repository.</p>
+<p><strong><code>git commit</code>:</strong> Git’s most important 
+command. After you make any sort of change, you input this in order to 
+take a “snapshot” of the repository. Usually it goes <code>git commit -m “Message here.”</code> The <code>-m</code> indicates that the following section of the command should be read as a message.</p>
+<p><strong><code>git branch</code>:</strong> Working with multiple 
+collaborators and want to make changes on your own? This command will 
+let you build a new branch, or timeline of commits, of changes and file 
+additions that are completely your own. Your title goes after the 
+command. If you wanted a new branch called “cats,” you’d type <code>git branch cats</code>.</p>
+<p><strong><code>git checkout</code>:</strong> Literally allows you to 
+“check out” a repository that you are not currently inside. This is a 
+navigational command that lets you move to the repository you want to 
+check. You can use this command as <code>git checkout master</code> to look at the master branch, or <code>git checkout cats</code> to look at another branch.</p>
+<p><strong><code>git merge</code>:</strong> When you’re done working on a
+ branch, you can merge your changes back to the master branch, which is 
+visible to all collaborators. <code>git merge cats</code> would take all the changes you made to the “cats” branch and add them to the master.</p>
+<p><strong><code>git push</code>:</strong> If you’re working on your 
+local computer, and want your commits to be visible online on GitHub as 
+well, you “push” the changes up to GitHub with this command.</p>
+<p><strong><code>git pull</code>:</strong> If you’re working on your 
+local computer and want the most up-to-date version of your repository 
+to work with, you “pull” the changes down from GitHub with this command.</p>
+<h2>Setting Up GitHub And Git For The First Time</h2>
+<p>&nbsp;</p>
+<figure><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/MTIyMzA0MjE1Mzc1NzY4ODU3.png"><figcaption>GitHub’s signup page.</figcaption></figure>
+<p>First, you’ll need to <a href="https://github.com/">sign up for an account</a>
+ on GitHub.com. It’s as simple as signing up for any other social 
+network. Keep the email you picked handy; we’ll be referencing it again 
+soon.</p>
+<p>You could stop there and GitHub would work fine. But if you want to 
+work on your project on your local computer, you need to have Git 
+installed. In fact, GitHub won’t work on your local computer if you 
+don’t install Git. Install Git for Windows, Mac or Linux <a href="https://git-scm.com/downloads">as needed</a>.</p>
+<p>&nbsp;</p>
+<figure><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/MTIyMzA0MjE4NTk2OTI4Nzkz.png"><figcaption>http://git-scm.com/, where you download Git.</figcaption></figure>
+<p>Now it’s time to go over to the command line. On Windows, that means 
+starting the Git Bash app you just installed, and on OS X, it’s regular 
+old Terminal. It’s time to introduce yourself to Git. Type in the 
+following code:</p>
+<pre>git config --global user.name "Your Name Here"</pre>
+<p>Of course, you’ll need to replace “Your Name Here” with your own name
+ in quotations. It can be your legal name, your online handle, anything.
+ Git doesn’t care, it just needs to know to whom to credit commits and 
+future projects.</p>
+<p>Next, tell it your email and make sure it’s the same email you used 
+when you signed up for a GitHub.com account just a moment ago. Do it 
+like this:</p>
+<pre>git config --global user.email "your_email@youremail.com"</pre>
+<p>That’s all you need to do to get started using Git on your computer. 
+However, since you did set up a GitHub.com account, it’s likely you 
+don’t just want to manage your project locally, but also online. If you 
+want you can also set up Git so it doesn’t ask you to log in to your 
+GitHub.com account every time you want to talk to it. For the purposes 
+of this tutorial, it isn’t a big deal since we’ll only be talking to it 
+once. The full tutorial to do this, however, is <a href="https://help.github.com/articles/set-up-git">located on GitHub</a>.</p>
+<p>&nbsp;</p>
+<figure><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/MTIyMzA0MjIxNTQ5OTgwOTUz.png"><figcaption>Baby’s first Git commands.</figcaption></figure>
+<h2>Creating Your Online Repository</h2>
+<p>Now that you’re all set up, it’s time to create a place for your 
+project to live. Both Git and GitHub refer to this as a repository, or 
+“repo” for short, a digital directory or storage space where you can 
+access your project, its files, and all the versions of its files that 
+Git saves.</p>
+<p>Go back to GitHub.com and click the tiny book icon next to your username. Or, go to the <a href="https://github.com/new">new repository page</a>
+ if all the icons look the same. Give your repository a short, memorable
+ name. Go ahead and make it public just for kicks; why hide your attempt
+ to learn GitHub?</p>
+<p>&nbsp;</p>
+<figure><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/MTIyMzA0MjI0MjM0MDc4ODIy.png"><figcaption>Creating a new repository on GitHub.</figcaption></figure>
+<p>Don’t worry about clicking the checkbox next to “Initialize this 
+repository with a README.” A Readme file is usually a text file that 
+explains a bit about the project. But we can make our own Readme file 
+locally for practice.</p>
+<p>Click the green “Create Repository” button and you’re set. You now have an online space for your project to live in.</p>
+<h2>Creating Your Local Repository</h2>
+<p>So we just made a space for your project to live online, but that’s 
+not where you’ll be working on it. The bulk of your work is going to be 
+done on your computer. So we need to actually mirror that repository we 
+just made as a local directory.</p>
+<p>This—where we do some heavy command line typing—is the part of every 
+Git tutorial that really trips me up, so I’m going to go tediously, 
+intelligence-insultingly slow.</p>
+<p>First type:</p>
+<pre>mkdir ~/MyProject</pre>
+<p><code>mkdir</code> is short for make directory. It’s not actually a 
+Git command, but a general navigational command from the time before 
+visual computer interfaces. The <code>~/</code> ensures that we’re 
+building the repository at the top level of your computer’s file 
+structure, instead of stuck inside some other directory that would be 
+hard to find later. Actually, if you type <code>~/</code> into your 
+browser window, it’ll bring up your local computer’s top level 
+directory. For me, using Chrome on a Mac, it displays my Users folder.</p>
+<p>Also, notice that I called it MyProject, the very same name I called 
+my GitHub repository that we made earlier. Keep your name consistent, 
+too.</p>
+<p>Next, type:</p>
+<pre>cd ~/MyProject</pre>
+<p><code>cd</code> stands for change directory, and it’s also a 
+navigational command. We just made a directory, and now we want to 
+switch over to that directory and go inside it. Once we type this 
+command, we are transported inside MyProject.</p>
+<p>Now we’re finally using a Git command. For your next line, type:</p>
+<pre>git init</pre>
+<p>You know you’re using a Git command because it always begins with <code>git</code>. <code>init</code>
+ stands for “initialize.” Remember how the previous two commands we 
+typed were general command-line terms? When we type this code in, it 
+tells the computer to recognize this directory as a local Git 
+repository. If you open up the folder, it won’t look any different, 
+because this new Git directory is a hidden file inside the dedicated 
+repository.</p>
+<p>&nbsp;</p>
+<figure><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/MTIyMzA0MjI2MTEzMTI3MDE0.png"><figcaption>Creating a local Git repository in three steps.</figcaption></figure>
+<p>However, your computer now realizes this directory is Git-ready, and 
+you can start inputting Git commands. Now you’ve got both an online and a
+ local repo for your project to live inside. In <a href="https://readwrite.com/2013/10/02/github-for-beginners-part-2">Part 2 of this series</a>, you will learn how to make your first commit to local and GitHub repositories, and learn about more great GitHub resources.</p>
+<p><strong>(See also: <a href="https://readwrite.com/2013/10/02/github-for-beginners-part-2">GitHub For Beginners: Commit, Push And Go</a>)</strong></p>
+<div class="clearfix"></div>
+<div class="menu-social-media-container" id="single-post-share-mobile">
+<ul id="menu-social-media" class="menu">
+<li> <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Freadwrite.com%2F2013%2F09%2F30%2Funderstanding-github-a-journey-for-beginners-part-1%2F" target="_blank" title="Facebook"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/fb-icon-light.png"></a></li>
+<li><a href="https://twitter.com/intent/tweet?text=GitHub%20For%20Beginners:%20Don%E2%80%99t%20Get%20Scared,%20Get%20Started&amp;url=https%3A%2F%2Freadwrite.com%2F2013%2F09%2F30%2Funderstanding-github-a-journey-for-beginners-part-1%2F&amp;via=Wptheme" title="Twitter" target="_blank"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/twitter-icon-light.png"></a></li>
+<li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Freadwrite.com%2F2013%2F09%2F30%2Funderstanding-github-a-journey-for-beginners-part-1%2F" title="Linkedin" target="_blank"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/insta-icon-light.png"></a></li>
+<li><a href="mailto:?Subject=Post From Read Write&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20https%3A%2F%2Freadwrite.com%2F2013%2F09%2F30%2Funderstanding-github-a-journey-for-beginners-part-1%2F&amp;text=GitHub%20For%20Beginners:%20Don%E2%80%99t%20Get%20Scared,%20Get%20Started" title="Email" target="_blank"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/email-share-icon.png"></a></li>
+</ul>
+</div>
+<div class="clearfix"></div>
+<div class="row popular-tags">
+<div class="col-md-12">
+<span class="tag-label">Tags:</span>
+<ul class="post_tags"><li><a href="https://readwrite.com/tag/github" title="GitHub Tag" class="github">#GitHub</a></li><li><a href="https://readwrite.com/tag/how-to" title="How To Tag" class="how-to">#How To</a></li><li><a href="https://readwrite.com/tag/version-control" title="version control Tag" class="version-control">#version control</a></li></ul> </div>
+</div>
+<div class="clearfix"></div>
+<div class="about-author">
+<div class="author-info">
+<div class="author-avatar col-md-2">
+<img alt="" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/a.jpeg" srcset="https://secure.gravatar.com/avatar/?s=250&amp;d=mm&amp;r=g 2x" class="avatar avatar-125 photo avatar-default" width="125" height="125"> </div>
+<div class="author-description col-md-10">
+<h3 class="author-title"><a href="https://readwrite.com/author/lauren-orsini/">lauren orsini</a></h3>
+<h5 class="author-role">
+</h5>
+<p class="author-bio">
+</p>
+<div class="menu-social-media-container">
+<ul id="menu-social-media" class="menu">
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="related_posts col-md-12">
+<div id="related_posts" class="col-md-12"><h3>Related Posts</h3><ul> <li class="col-md-3">
+<div class="relatedthumb">
+<a href="https://readwrite.com/2018/08/03/performance-testing-essentials-process-and-best-practices/" rel="bookmark" title="Performance Testing: Essentials, Process, and Best Practices">
+<img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/developer-182x125.jpg" class="attachment-related-post size-related-post wp-post-image" alt="" width="182" height="125"> </a>
+</div>
+<div class="relatedcontent">
+<h6><a href="https://readwrite.com/2018/08/03/performance-testing-essentials-process-and-best-practices/" rel="bookmark" title="Performance Testing: Essentials, Process, and Best Practices">Performance Testing: Essentials, Process, and B...</a></h6>
+</div>
+</li>
+<li class="col-md-3">
+<div class="relatedthumb">
+<a href="https://readwrite.com/2018/04/26/the-problem-with-believing-coding-is-no-longer-important/" rel="bookmark" title="The Problem With Believing Coding Is No Longer Important">
+<img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/coding-182x125.jpg" class="attachment-related-post size-related-post wp-post-image" alt="" width="182" height="125"> </a>
+</div>
+<div class="relatedcontent">
+<h6><a href="https://readwrite.com/2018/04/26/the-problem-with-believing-coding-is-no-longer-important/" rel="bookmark" title="The Problem With Believing Coding Is No Longer Important">The Problem With Believing Coding Is No Longer ...</a></h6>
+</div>
+</li>
+<li class="col-md-3">
+<div class="relatedthumb">
+<a href="https://readwrite.com/2016/03/22/primer-data-encryption-sc3/" rel="bookmark" title="A primer on data encryption">
+<img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/iStock_000056517222_Small-182x125.jpg" class="attachment-related-post size-related-post wp-post-image" alt="Electric imp" width="182" height="125"> </a>
+</div>
+<div class="relatedcontent">
+<h6><a href="https://readwrite.com/2016/03/22/primer-data-encryption-sc3/" rel="bookmark" title="A primer on data encryption">A primer on data encryption</a></h6>
+</div>
+</li>
+<li class="col-md-3">
+<div class="relatedthumb">
+<a href="https://readwrite.com/2016/02/24/downloads-and-revenue/" rel="bookmark" title="Are Downloads Driving Your Revenue?">
+<img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/default-article-small.jpg" alt="Are Downloads Driving Your Revenue?">
+</a>
+</div>
+<div class="relatedcontent">
+<h6><a href="https://readwrite.com/2016/02/24/downloads-and-revenue/" rel="bookmark" title="Are Downloads Driving Your Revenue?">Are Downloads Driving Your Revenue?</a></h6>
+</div>
+</li>
+</ul></div> </div>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+</div>
+<footer id="colophon" class="site-footer col-md-10 offset-2" role="contentinfo">
+<div class="site-info">
+<div class="site-branding">
+<a href="https://readwrite.com/" class="custom-logo-link" rel="home" itemprop="url"><img src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/logo.png" class="custom-logo" alt="ReadWrite" itemprop="logo" width="148" height="26"></a> </div>
+</div>
+<div class="row footer-nav-links">
+<div class="col-md-8 foot-nav">
+<nav id="site-navigation" class="main-navigation" role="navigation">
+<div class="menu-foot-menu-container"><ul id="menu-foot-menu" class="nav-menu"><li id="menu-item-125079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125079"><a href="https://readwrite.com/about/">About</a></li>
+<li id="menu-item-125080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125080"><a href="https://readwrite.com/advertise/">Advertise</a></li>
+<li id="menu-item-125081" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125081"><a href="https://readwrite.com/contact/">Contact</a></li>
+<li id="menu-item-125082" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125082"><a href="https://readwrite.com/events/">Events</a></li>
+<li id="menu-item-125083" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125083"><a href="https://readwrite.com/privacy/">Privacy</a></li>
+<li id="menu-item-125638" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-125638"><a href="https://readwrite.com/contributor-guidelines/">Guest Post</a></li>
+<li id="menu-item-125084" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125084"><a href="https://readwrite.com/subscribe/">Subscribe</a></li>
+</ul></div> </nav>
+</div>
+<div class="col-md-4 foot-nav email-subscription">
+</div>
+</div>
+<div class="row footer-links">
+<div class="col-md-6 site-terms">
+<div class="menu-site-terms-container"><ul id="menu-site-terms" class="terms-nav"><li id="menu-item-125056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-125056"><a href="https://readwrite.com/privacy/">Privacy</a></li>
+</ul></div>
+<div class="copyright"></div>
+</div>
+<div class="col-md-6 footer-social-nav">
+<nav id="footer-social-navigation" class="social-navigation" role="navigation">
+<div class="menu-footer-social-menu-container"><ul id="menu-footer-social-menu" class="menu"><li id="menu-item-125059" class="fb menu-item menu-item-type-custom menu-item-object-custom menu-item-125059"><a target="_blank" href="https://www.facebook.com/ReadWrite"><span class="screen-reader-text">Facebook</span></a></li>
+<li id="menu-item-125060" class="twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-125060"><a target="_blank" href="https://twitter.com/RWW"><span class="screen-reader-text">Twitter</span></a></li>
+<li id="menu-item-125061" class="insta menu-item menu-item-type-custom menu-item-object-custom menu-item-125061"><a target="_blank" href="https://www.instagram.com/readwritedotcom/"><span class="screen-reader-text">Instagram</span></a></li>
+<li id="menu-item-125065" class="gplus menu-item menu-item-type-custom menu-item-object-custom menu-item-125065"><a target="_blank" href="https://plus.google.com/+ReadWriteWeb/posts"><span class="screen-reader-text">Gplus</span></a></li>
+<li id="menu-item-125066" class="ytube menu-item menu-item-type-custom menu-item-object-custom menu-item-125066"><a target="_blank" href="https://www.youtube.com/channel/UClMPvTStrcn829w34OWNEPw"><span class="screen-reader-text">Youtube</span></a></li>
+</ul></div> </nav>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-421291-1', 'auto');
+  ga('send', 'pageview');
+  ga('set', 'anonymizeIp', true);
+  </script>
+<script async="">(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='a51dd0819147e3d3dc2e1729743f88213ae2b2990c36c1a5d4bea16c91682288';j.dataset.sumoPlatform='wordpress';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script> <script type="application/javascript">
+      var ajaxurl = "https://readwrite.com/wp-admin/admin-ajax.php";
+
+      function sumo_add_woocommerce_coupon(code) {
+        jQuery.post(ajaxurl, {
+          action: 'sumo_add_woocommerce_coupon',
+          code: code,
+        });
+      }
+
+      function sumo_remove_woocommerce_coupon(code) {
+        jQuery.post(ajaxurl, {
+          action: 'sumo_remove_woocommerce_coupon',
+          code: code,
+        });
+      }
+
+      function sumo_get_woocommerce_cart_subtotal(callback) {
+        jQuery.ajax({
+          method: 'POST',
+          url: ajaxurl,
+          dataType: 'html',
+          data: {
+            action: 'sumo_get_woocommerce_cart_subtotal',
+          },
+          success: function(subtotal) {
+            return callback(null, subtotal);
+          },
+          error: function(err) {
+            return callback(err, 0);
+          }
+        });
+      }
+    </script>
+<link rel="stylesheet" id="typekit-lib-css" href="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/nzt0afb.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/readwrite.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/scripts.js"></script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/497.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var advanced_ads_sticky_settings = {"check_position_fixed":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/782.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var advadsTracking = {"ajaxurl":"https:\/\/readwrite.com\/wp-admin\/admin-ajax.php?action=advanced-ads-tracking-track","method":"frontend","blogId":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/165.js"></script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/wp-embed.js"></script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/bootstrap.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/functions.js"></script>
+<script>var advads_placement_tests = [];
+var advads_passive_ads = {};
+var advads_passive_groups = {};
+var advads_passive_placements = {};
+var advads_ajax_queries = [{"id":"home_header_728","method":"placement","params":{"previous_method":"placement","previous_id":"home_header_728","post":{"id":88905,"author":"109","post_type":"post"},"wp_the_query":{"term_id":"","taxonomy":"","is_main_query":true,"page":1,"numpages":1,"is_archive":false,"is_search":false,"is_home":false,"is_404":false,"is_attachment":false,"is_singular":true,"is_front_page":false,"is_feed":false},"url_parameter":"\/2013\/09\/30\/understanding-github-a-journey-for-beginners-part-1\/","placement_type":"default","cache-busting":"auto","output":{"class":["rwads-home_header_728"],"placement_id":"home_header_728"},"global_output":true},"elementid":"rwads-d021a36614bb71ac3029a5962c22927c","blog_id":1}];
+var advads_has_ads = [];
+( window.advanced_ads_ready || jQuery( document ).ready ).call( null, function() {if ( window.advanced_ads_pro ) {advanced_ads_pro.process_passive_cb();} else if ( window.console && window.console.log ) {console.log('Advanced Ads Pro: cache-busting can not be initialized');}});</script><script>        
+        var wppbRecaptchaCallback = function() {
+            if( typeof window.wppbRecaptchaCallbackExecuted == "undefined" ){//see if we executed this before
+                jQuery(".wppb-recaptcha-element").each(function(){
+                    recID = grecaptcha.render( jQuery(this).attr("id"), {
+                        "sitekey" : "6LciKVwUAAAAABHLgNRMEwXRo-RIyShB6Da0LW6q",                        
+                        "error-callback": wppbRecaptchaInitializationError,
+                                                
+                     });                 
+                });
+                window.wppbRecaptchaCallbackExecuted = true;//we use this to make sure we only run the callback once
+            }
+        };
+        
+        /* the callback function for when the captcha does not load propperly, maybe network problem or wrong keys  */
+        function wppbRecaptchaInitializationError(){            
+            window.wppbRecaptchaInitError = true;
+            //add a captcha field so we do not just let the form submit if we do not have a captcha response
+            jQuery( ".wppb-recaptcha-element" ).after('<input type="hidden" id="wppb_recaptcha_load_error" name="wppb_recaptcha_load_error" value="1097d38710" />');
+        }
+        
+        /* compatibility with other plugins that may include recaptcha with an onload callback. if their script loads first then our callback will not execute so call it explicitly  */        
+        jQuery( window ).on( "load", function() {
+            wppbRecaptchaCallback();
+        });
+    </script><script src="GitHub%20For%20Beginners:%20Don't%20Get%20Scared,%20Get%20Started%20-%20ReadWrite_files/api.js" async="" defer="defer"></script><script type="text/javascript">var advads_tracking_ads = {};var advads_tracking_urls = {"1":"https:\/\/readwrite.com\/wp-admin\/admin-ajax.php?action=advanced-ads-tracking-track"};var advads_gatracking_uids = {"1":""};var advads_tracking_methods = {"1":"frontend"};var advads_tracking_parallel = {"1":false};var advads_tracking_linkbases = {"1":"https:\/\/readwrite.com\/adunit\/"};var advads_gatracking_allads = {"1":{"147579":{"title":"MSFT IA_NYC\/NRF 300 x 250 v2","target":"https:\/\/vshow.on24.com\/vshow\/IOT_Bootcamp\/registration\/15653?l=en&partnerref=MSFT_AM_EN_VBC_OTH_VBC1_3PP_BA_RW_NA_NA"},"147574":{"title":"Microsoft IA_NYC\/NRF 300 x 250","target":"https:\/\/vshow.on24.com\/vshow\/IOT_Bootcamp\/registration\/15653?l=en&partnerref=MSFT_AM_EN_VBC_OTH_VBC1_3PP_BA_RW_NA_NA"},"147572":{"title":"MSFT IA_NYC\/NRF 728 x 90","target":"https:\/\/vshow.on24.com\/vshow\/IOT_Bootcamp\/registration\/15653?l=en&partnerref=MSFT_AM_EN_VBC_OTH_VBC1_3PP_BA_RW_NA_NA"},"142712":{"title":"Microsoft IA Santa Clara Event Banner 3 \u2013 300 x 250","target":"https:\/\/iotinactionevents.com\/event\/santa-clara\/?ocid=MSFT_AM_EN_IOTALE_OTH_IASC_3PP_BA_RW_NA_NA"},"142709":{"title":"Microsoft IA Santa Clara Event Banner 2 - 300 x 250","target":"https:\/\/iotinactionevents.com\/event\/santa-clara\/?ocid=MSFT_AM_EN_IOTALE_OTH_IASC_3PP_BA_RW_NA_NA"},"142610":{"title":"Microsoft IA Santa Clara Event Banner 1","target":"https:\/\/iotinactionevents.com\/event\/santa-clara\/?ocid=MSFT_AM_EN_IOTALE_OTH_IASC_3PP_BA_RW_NA_NA"},"107179":{"title":"Twilio-720x90-1","target":"https:\/\/www.twilio.com\/wireless?utm_source=readwrite&utm_medium=cpc&utm_campaign=WirelessGA&utm_content=RW_web"},"107111":{"title":"Panasonic-300\u00d7250-3","target":"http:\/\/bit.ly\/2GXCfHa"},"107110":{"title":"http:\/\/bit.ly\/2qumFI8","target":false},"107104":{"title":"Panasonic-300\u00d7250-2","target":"http:\/\/bit.ly\/2qumFI8"},"107102":{"title":"Panasonic-300x250-1","target":"http:\/\/bit.ly\/2JGjwxA"},"99504":{"title":"IOTREV-300x250-b","target":"http:\/\/club.readwrite.com\/?utm_campaign=iotrev&utm_medium=300x250b&utm_source=website"},"99505":{"title":"IOTREV-300x250-c","target":"http:\/\/club.readwrite.com\/?utm_campaign=iotrev&utm_medium=300x250c&utm_source=website"},"99506":{"title":"IOTREV-300x250-d","target":"http:\/\/club.readwrite.com\/?utm_campaign=iotrev&utm_medium=300x250d&utm_source=website"},"99507":{"title":"IOTREV-300x250-e","target":"http:\/\/club.readwrite.com\/?utm_campaign=iotrev&utm_medium=300x250e&utm_source=website"},"99509":{"title":"IOTREV-728x90-b","target":"http:\/\/club.readwrite.com\/?utm_campaign=iotrev&utm_medium=728x90b&utm_source=website"},"99510":{"title":"IOTREV-728x90-c","target":"http:\/\/club.readwrite.com\/?utm_campaign=iotrev&utm_medium=728x90c&utm_source=website"},"99511":{"title":"IOTREV-728x90-d","target":"http:\/\/club.readwrite.com\/?utm_campaign=iotrev&utm_medium=728x90d&utm_source=website"},"99493":{"title":"IOTREV-300x250-a","target":"http:\/\/club.readwrite.com\/?utm_campaign=iotrev&utm_medium=300x250a&utm_source=website"},"99508":{"title":"IOTREV-728x90-a","target":"http:\/\/club.readwrite.com\/?utm_campaign=iotrev&utm_medium=728x90a&utm_source=website"},"99489":{"title":"Vertiv-300x250","target":"https:\/\/www.vertivco.com\/en-us\/about\/?utm_source=N7171.1503341READWRITE.COM&utm_medium=display&utm_content=93564959&utm_campaign=20336947&utm_term=205810660"},"99488":{"title":"Vertiv-PK3L3B-728x90","target":"https:\/\/www.vertivco.com\/en-us\/about\/?utm_source=N7171.1503341READWRITE.COM&utm_medium=display&utm_content=93566405&utm_campaign=20336947&utm_term=205755332"},"99487":{"title":"Vertiv-PK3L3D-728x90","target":"https:\/\/www.vertivco.com\/en-us\/about\/?utm_source=N7171.1503341READWRITE.COM&utm_medium=display&utm_content=93565076&utm_campaign=20336947&utm_term=205754816"},"99472":{"title":"TE-VR \/ Inventor-300x250","target":"https:\/\/ad.doubleclick.net\/ddm\/trackclk\/N46002.1503341READWRITE.COM\/B20323108.205597455;dc_trk_aid=406226116;dc_trk_cid=93605295;dc_lat=;dc_rdid=;tag_for_child_directed_treatment="},"99471":{"title":"TE-VR \/ Inventor-300x600","target":"https:\/\/ad.doubleclick.net\/ddm\/trackclk\/N46002.1503341READWRITE.COM\/B20323108.205597455;dc_trk_aid=406226116;dc_trk_cid=93605295;dc_lat=;dc_rdid=;tag_for_child_directed_treatment="},"99467":{"title":"TE-VR \/ Inventor-728x90","target":"https:\/\/ad.doubleclick.net\/ddm\/trackclk\/N46002.1503341READWRITE.COM\/B20323108.205597455;dc_trk_aid=406226116;dc_trk_cid=93605295;dc_lat=;dc_rdid=;tag_for_child_directed_treatment="},"99466":{"title":"TE-IND \/ Connected Factory-300x600","target":"https:\/\/ad.doubleclick.net\/ddm\/trackclk\/N46002.1503341READWRITE.COM\/B20323108.205595484;dc_trk_aid=406222060;dc_trk_cid=93645785;dc_lat=;dc_rdid=;tag_for_child_directed_treatment"},"99465":{"title":"TE-IND \/ Connected Factory-728x90","target":"https:\/\/ad.doubleclick.net\/ddm\/trackclk\/N46002.1503341READWRITE.COM\/B20323108.205595484;dc_trk_aid=406222060;dc_trk_cid=93645785;dc_lat=;dc_rdid=;tag_for_child_directed_treatment"},"99461":{"title":"TE-IND \/ Connected Factory-300x250","target":"https:\/\/ad.doubleclick.net\/ddm\/trackclk\/N46002.1503341READWRITE.COM\/B20323108.205595484;dc_trk_aid=406222060;dc_trk_cid=93645785;dc_lat=;dc_rdid=;tag_for_child_directed_treatment"},"99460":{"title":"TE-EV \/ Bike-300x600","target":"http:\/\/www.te.com\/usa-en\/about-te\/ecc.html?te_bu=Cor&te_type=disp&te_campaign=rww_usa_awe-fy17-gn&elqCampaignId=12949"},"99458":{"title":"TE-EV \/ Bike-300x250","target":"http:\/\/www.te.com\/usa-en\/about-te\/ecc.html?te_bu=Cor&te_type=disp&te_campaign=rww_usa_awe-fy17-gn&elqCampaignId=12949"},"99454":{"title":"TE-EV \/ Bike-728x90","target":"http:\/\/www.te.com\/usa-en\/about-te\/ecc.html?te_bu=Cor&te_type=disp&te_campaign=rww_usa_awe-fy17-gn&elqCampaignId=12949"},"99452":{"title":"TE-Nikola-728x90","target":"https:\/\/ad.doubleclick.net\/ddm\/trackclk\/N46002.1503341READWRITE.COM\/B20323108.205498499;dc_trk_aid=406224919;dc_trk_cid=93651476;dc_lat=;dc_rdid=;tag_for_child_directed_treatment="},"99450":{"title":"TE-Nikola-300x600","target":"https:\/\/ad.doubleclick.net\/ddm\/trackclk\/N46002.1503341READWRITE.COM\/B20323108.205498499;dc_trk_aid=406224919;dc_trk_cid=93651476;dc_lat=;dc_rdid=;tag_for_child_directed_treatment="},"99448":{"title":"TE-Nikola-300x250","target":"https:\/\/ad.doubleclick.net\/ddm\/trackclk\/N46002.1503341READWRITE.COM\/B20323108.205498499;dc_trk_aid=406224919;dc_trk_cid=93651476;dc_lat=;dc_rdid=;tag_for_child_directed_treatment="},"98765":{"title":"iot_rev_728x90","target":"http:\/\/events.readwrite.com\/IoTRevolution?utm_campaign=rwwebsiteutm_medium=ads_source=rw"},"98763":{"title":"iot_rev_300x250","target":"http:\/\/events.readwrite.com\/IoTRevolution?utm_campaign=rwwebsiteutm_medium=ads_source=rw"},"98761":{"title":"iot_rev_300x600","target":"http:\/\/events.readwrite.com\/IoTRevolution?utm_campaign=rwwebsiteutm_medium=ads_source=rw"},"97877":{"title":"Kore-connectedhealth- 728x90","target":"https:\/\/www.brighttalk.com\/webcast\/15485\/256573?utm_source=readwriteads"},"97140":{"title":"Incubation-728x90","target":"http:\/\/www.readwritelabsincubation.com?utm_campaign=labapp&utm_medium=728x90ads&utm_source=website"},"95316":{"title":"MSFT-728x90-ROS- iotevent","target":"https:\/\/dynamicevents.emeetingsonline.com\/emeetings\/websitev2.asp?mmnno=644&pagename=SITE513408&utm_campaign=event&utm_medium=adsdisplay&utm_source=readwrite"},"94453":{"title":"Panasonic-728x90-smartcity","target":"http:\/\/panasonicces2017.com\/smart-city?utm_source=readwrite-com&utm_medium=paid-content&utm_content=smart-city-video-promotion&utm_campaign=ces-2017-microsite"},"94447":{"title":"Panasonic-728x90-automotive","target":"http:\/\/panasonicces2017.com\/automotive\/?utm_source=readwrite-com&utm_medium=paid-content&utm_content=automotive-video-promotion&utm_campaign=ces-2017-microsite"},"93932":{"title":"2523_728x90_ver2","target":"http:\/\/home.labs.mediatek.com\/hellortos\/?utm_source=wearableworld&utm_medium=banner&utm_content=hellortos2523&utm_campaign=wearableworld"},"93930":{"title":"2523_300x600_ver2","target":"http:\/\/home.labs.mediatek.com\/hellortos\/?utm_source=wearableworld&utm_medium=banner&utm_content=hellortos2523&utm_campaign=wearableworld"},"93919":{"title":"2523_300x250_ver2","target":"http:\/\/home.labs.mediatek.com\/hellortos\/?utm_source=wearableworld&utm_medium=banner&utm_content=hellortos2523&utm_campaign=wearableworld"},"93766":{"title":"HelloWorld-MTK-300x250","target":"http:\/\/home.labs.mediatek.com\/helloworld\/?utm_source=wearableworld&utm_medium=banner&utm_content=helloworld&utm_campaign=wearableworld"},"93761":{"title":"HelloWorld-MTK-728x90","target":"http:\/\/home.labs.mediatek.com\/helloworld\/?utm_source=wearableworld&utm_medium=banner&utm_content=helloworld&utm_campaign=wearableworld"},"93720":{"title":"revelry-300-600","target":"https:\/\/goo.gl\/Abx1xs"},"93718":{"title":"revelry-300-250","target":"https:\/\/goo.gl\/3lPHHL"},"93716":{"title":"revelry-728-90","target":"https:\/\/goo.gl\/L9PN2N"},"10137":{"title":"LABapp-728x90","target":"http:\/\/readwritelabs.com?utm_campaign=labapp&utm_medium=728x90ads&utm_source=website"},"10136":{"title":"LABapp-300x600","target":"http:\/\/readwritelabs.com?utm_campaign=labapp&utm_medium=300x600ads&utm_source=website"},"10130":{"title":"LABapp-300x250","target":"http:\/\/readwritelabs.com?utm_campaign=labapp&utm_medium=300x250ads&utm_source=website"},"10129":{"title":"RWHack-300x600","target":"https:\/\/www.hackster.io\/hackathons\/smart-cities\/readwrite-ces\/pages\/overview?utm_campaign=rwhack&utm_medium=300x600ads&utm_source=website"},"10126":{"title":"RWHack-728x90","target":"https:\/\/www.hackster.io\/hackathons\/smart-cities\/readwrite-ces\/pages\/overview?utm_campaign=rwhack&utm_medium=728x90ads&utm_source=website"},"10121":{"title":"RWHack-300x250","target":"https:\/\/www.hackster.io\/hackathons\/smart-cities\/readwrite-ces\/pages\/overview?utm_campaign=rwhack&utm_medium=300x250ads&utm_source=website"},"9212":{"title":"mediatek-HW-300x600","target":"http:\/\/home.labs.mediatek.com\/helloworld\/?utm_source=wearableworld&utm_medium=banner&utm_content=helloworld&utm_campaign=wearableworld"},"9210":{"title":"mediatek-HW-728x90","target":"http:\/\/home.labs.mediatek.com\/helloworld\/?utm_source=wearableworld&utm_medium=banner&utm_content=helloworld&utm_campaign=wearableworld"},"9209":{"title":"mediatek-7688-300x250-ljusbla","target":"http:\/\/home.labs.mediatek.com\/helloworld\/?utm_source=wearableworld&utm_medium=banner&utm_content=helloworld&utm_campaign=wearableworld"},"9208":{"title":"mediatek-7688-300x600-klarbla","target":"http:\/\/home.labs.mediatek.com\/helloworld\/?utm_source=wearableworld&utm_medium=banner&utm_content=helloworld&utm_campaign=wearableworld"},"9200":{"title":"mediatek-HW-300x250","target":"http:\/\/home.labs.mediatek.com\/helloworld\/?utm_source=wearableworld&utm_medium=banner&utm_content=helloworld&utm_campaign=wearableworld"},"9198":{"title":"meditek-7688-728x90","target":"http:\/\/home.labs.mediatek.com\/hello7688\/?utm_source=wearableworld&utm_medium=banner&utm_content=hello7688&utm_campaign=wearableworld"}}};var advads_gatracking_anonym = true;</script>
+
+
+<iframe style="display: none;" id="sumome-jquery-iframe" title="Sumo Hidden Content"></iframe><a href="javascript:void(0);" title="Sumo" style="background-color: rgb(0, 115, 183); border-radius: 3px 0px 0px 3px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px; position: fixed; display: none !important; z-index: 2147483647; padding: 0px; width: 44px; height: 40px; text-indent: -10000px; opacity: 1;"><span style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Sumo</span><span style="display:block;width:40px;height:40px;background:white;margin-left:4px;-webkit-border-radius: 3px 0 0 3px;-moz-border-radius: 3px 0 0 3px;-ms-border-radius: 3px 0 0 3px;-o-border-radius: 3px 0 0 3px;border-radius: 3px 0 0 3px;background-repeat:no-repeat;background-position:8px 8px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxZDQ2MjI4YS03NWY2LTRkZTQtOGJjYy1hODc1NjRkMjYxYTUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDQ3MUVFMDFFMjVDMTFFNjlFQjhBRjdGODU5MDJBMDUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDQ3MUVFMDBFMjVDMTFFNjlFQjhBRjdGODU5MDJBMDUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxZDQ2MjI4YS03NWY2LTRkZTQtOGJjYy1hODc1NjRkMjYxYTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MWQ0NjIyOGEtNzVmNi00ZGU0LThiY2MtYTg3NTY0ZDI2MWE1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+8JtvywAAAKhQTFRFzOPxSJvLA3W4Mo7FBna5w97u8vj7EHy8a67VhbzdsdTpVaLPh73d9/v9C3m6QZfJbq/WXKbR3u32JIfB3ez1KorDir/eBHW4+/3+rtPoZarUG4K/LIvDDnu7ocvkf7nbdrTY9fr8E328WKPQO5PITJ3MPpXJstXptdbq+Pv9cbHXaq3VU6HOkMLgnMnjDHq62uv1/P3+6/T53Oz1cLDX/f7+AHO3////ptOZ5QAAADh0Uk5T/////////////////////////////////////////////////////////////////////////wA7XBHKAAAAmUlEQVR42sSRRxLCMAxFRSq9907ovebr/jdDMWYGxmZL3sIqbyFbJv4B/VlkVlerKALTD3G46Mx3AOR1UZ/TsDxW6W0gfYRNVfTCFu2AWpAMgMItMW+zQJU2UjWI29D0+e5KWNPMk+A9Om+B/UgOJyCuwMJCrpuziYkIsglfRByZ/XM3eXnBFEu1kpMpjq9dxQYp/OAXTwEGAB7Rc1xVnPemAAAAAElFTkSuQmCC);"></span></a><iframe style="display: none;"></iframe><div style="position:fixed;top:0;left:0;overflow:hidden;"><label for="focus_retriever" style="position:absolute;left:-1000px;">Focus Retriever</label><input style="position:absolute;left:-1000px;" type="text" name="focus_retriever" id="focus_retriever" readonly="true"></div></body></html>
